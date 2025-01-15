@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #2C303D;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.tab {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    -o-transition: background 0.2s;
+    transition: background 0.2s;
+}
+
+.tab.active {
+    background: #3e4048;
+}
+
+.icon-button {
+    margin-left: auto;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.icon-button:hover {
+    background: #44454c;
+}
+
+main {
+    width: 100%;
+    max-width: 600px;
+    background: #2C303D;
+    border-radius: 8px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.time-display {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.time-controls {
+    display: flex;
+    gap: 1rem;
+}
+
+.time-btn {
+    background: #3A3F50;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.time-btn:hover {
+    background: #4d4f56;
+}
+
+.progress-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 30px;
+    background: #2d2f37;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #70a1ff;
+    transition: width 0.2s;
+}
+
+.play-pause-btn {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    background: #A8C7FA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+}
