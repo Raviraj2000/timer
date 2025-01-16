@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: sans-serif;
+  background: #2d2f37;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.left-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.right-section {
+  display: flex;
+  gap: 1rem;
+}
+
+.tab {
+  background: #3e4048;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tab.active {
+  background: #52535c;
+}
+
+.icon-button {
+  background: #3e4048;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Timer Section */
+#timer-section, #stopwatch-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.time-display, .stopwatch-display {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+.time-controls, .stopwatch-controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.time-btn, .stopwatch-btn {
+  background: #3e4048;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.time-btn:hover, .stopwatch-btn:hover {
+  background: #4d4f56;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.play-pause-btn {
+  background: #3e4048;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.play-pause-btn:hover {
+  background: #4d4f56;
+}
