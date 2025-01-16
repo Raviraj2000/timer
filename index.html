@@ -8,33 +8,43 @@
 </head>
 <body>
     <header>
+      <div class="left-section">
         <button class="tab active" id="timer-tab">Timer</button>
         <button class="tab" id="stopwatch-tab">Stopwatch</button>
-
-        <button class="icon-button" id="volume-btn" title="volume">
-            <span>🔊</span>
-        </button>
-        <button class="icon-button" id="fullscreen-btn" title="Fullscreen">
-            <span>⛶</span>
-        </button>
+      </div>
+      <div class="right-section">
+        <button class="icon-button" id="volume-btn" title="Volume">🔊</button>
+        <button class="icon-button" id="fullscreen-btn" title="Fullscreen">⛶</button>
+      </div>
     </header>
-
+  
     <main>
+      <div id="timer-section">
         <div class="time-display" id="time-display">5:00</div>
-
+    
         <div class="time-controls">
             <button class="time-btn" data-add-seconds="30">+0:30</button>
             <button class="time-btn" data-add-seconds="60">+1:00</button>
             <button class="time-btn" data-add-seconds="300">+5:00</button>
         </div>
-
+    
         <div class="progress-container">
-            <div class="progress-bar">
-                <div class="progress-fill" id="progress-fill"></div>
-            </div>
             <button class="play-pause-btn" id="play-pause-btn">▶</button>
         </div>
+      </div>
+
+      <div id="stopwatch-section" style="display: none;">
+        <div class="stopwatch-display" id="stopwatch-display">0.00</div>
+        <div class="stopwatch-controls">
+            <button class="stopwatch-btn" id="start-stopwatch">▶</button>
+            <button class="stopwatch-btn" id="reset-stopwatch">↻</button>
+        </div>
+    </div>
+
     </main>
+  
+    <!-- Link your JS last -->
     <script src="src/js/main.js"></script>
-</body>
+  </body>
+  
 </html>
